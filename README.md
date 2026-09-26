@@ -33,3 +33,7 @@ ecotech/
 ├── index.html
 ├── README.md
 └── PengerjaanKelompok.md
+
+## Using AI
+
+- ChatGPT
