@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>EcoTech — Technology for a Greener Future</title>
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./src/output.css" />
   </head>
 
-  <body class="bg-[#f7f6ef] text-[#183329] antialiased">
+  <body
+    class="flex min-h-screen flex-col bg-[#f7f6ef] text-[#183329] antialiased"
+  >
     <!-- ================= NAVBAR ================= -->
     <header
       class="sticky top-0 z-50 border-b border-[#123c2a]/10 bg-[#f7f6ef]/70 px-6 py-5 backdrop-blur-xl lg:px-12"
@@ -43,7 +46,14 @@
                 Program
               </a>
             </li>
-
+            <li>
+              <a
+                href="#action"
+                class="text-sm font-semibold text-[#52655b] transition hover:text-[#287a4d]"
+              >
+                Aksi
+              </a>
+            </li>
             <li>
               <a
                 href="#impact"
@@ -57,15 +67,16 @@
 
         <!-- CTA -->
         <a
-          href="#action"
+          href="#footer"
           class="rounded-full bg-[#287a4d] px-5 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-[#123c2a]"
         >
-          Dukung Sekarang
+          Footer
         </a>
       </div>
     </header>
 
-    <main>
+    <!-- ================= MAIN ================= -->
+    <main class="flex-1">
       <!-- ================= HERO ================= -->
       <section id="home" class="overflow-hidden px-6 py-24 lg:px-12 lg:py-32">
         <div
@@ -105,7 +116,6 @@
 
           <!-- Hero Visual -->
           <div class="relative">
-            <!-- Image -->
             <div
               class="relative overflow-hidden rounded-[32px] border border-white/10 shadow-2xl shadow-black/40"
             >
@@ -159,11 +169,9 @@
           </h2>
 
           <div
-            class="backdrop-blur mt-12 max-w-5xl rounded-[28px] border border-[#dcebdc] bg-[#edf6eb]/10 p-8 sm:p-10 lg:p-12"
+            class="mt-12 max-w-5xl rounded-[28px] border border-[#dcebdc] bg-[#edf6eb]/10 p-8 backdrop-blur sm:p-10 lg:p-12"
           >
-            <p
-              class="text-[#f7f6ef] leading-8 text-white sm:text-lg lg:text-xl"
-            >
+            <p class="leading-8 text-white sm:text-lg lg:text-xl">
               Penggunaan teknologi tanpa batas memicu peningkatan limbah
               elektronik dan konsumsi energi pusat data yang sangat tinggi. Jika
               tidak dikelola dengan bijak, emisi karbon dari sektor digital akan
@@ -208,16 +216,14 @@
             <article
               class="group overflow-hidden rounded-[28px] border border-[#dfe7df] bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(20,70,42,0.08)]"
             >
-              <!-- Foto -->
               <div class="h-56 overflow-hidden">
-                  <img
-                    src="images/green-energy.jpeg"
-                    alt="Green Energy"
-                    class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                  />
+                <img
+                  src="images/green-energy.jpeg"
+                  alt="Green Energy"
+                  class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                />
               </div>
 
-              <!-- Content -->
               <div class="p-8">
                 <h3
                   class="text-2xl font-extrabold tracking-tight text-[#123c2a]"
@@ -237,7 +243,6 @@
             <article
               class="group overflow-hidden rounded-[28px] border border-[#dfe7df] bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(20,70,42,0.08)]"
             >
-              <!-- Foto -->
               <div class="h-56 overflow-hidden">
                 <img
                   src="images/digital-awareness.jpeg"
@@ -246,7 +251,6 @@
                 />
               </div>
 
-              <!-- Content -->
               <div class="p-8">
                 <h3
                   class="text-2xl font-extrabold tracking-tight text-[#123c2a]"
@@ -266,7 +270,6 @@
             <article
               class="group overflow-hidden rounded-[28px] border border-[#dfe7df] bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(20,70,42,0.08)]"
             >
-              <!-- Foto -->
               <div class="h-56 overflow-hidden">
                 <img
                   src="images/smart-technology.jpeg"
@@ -275,7 +278,6 @@
                 />
               </div>
 
-              <!-- Content -->
               <div class="p-8">
                 <h3
                   class="text-2xl font-extrabold tracking-tight text-[#123c2a]"
@@ -295,71 +297,71 @@
       </section>
 
       <!-- ================= ACTION ================= -->
-<section
-  id="action"
-  class="bg-[#f7f6ef] px-6 py-20 lg:px-12 lg:py-24"
->
-  <div class="mx-auto max-w-7xl">
-    
-    <div class="mb-12 max-w-3xl">
-      <span
-        class="mb-5 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-[#287a4d]"
-      >
-        <span class="h-2 w-2 rounded-full bg-[#287a4d]"></span>
-        Start Small
-      </span>
+      <section id="action" class="bg-[#f7f6ef] px-6 py-20 lg:px-12 lg:py-24">
+        <div class="mx-auto max-w-7xl">
+          <div class="mb-12 max-w-3xl">
+            <span
+              class="mb-5 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-[#287a4d]"
+            >
+              <span class="h-2 w-2 rounded-full bg-[#287a4d]"></span>
+              Start Small
+            </span>
 
-      <h2
-        class="text-4xl font-extrabold leading-tight tracking-[-0.035em] text-[#123c2a] sm:text-5xl"
-      >
-        Mulai dari
-        <span class="text-[#287a4d]">Hal Sederhana.</span>
-      </h2>
+            <h2
+              class="text-4xl font-extrabold leading-tight tracking-[-0.035em] text-[#123c2a] sm:text-5xl"
+            >
+              Mulai dari
+              <span class="text-[#287a4d]">Hal Sederhana.</span>
+            </h2>
 
-      <p class="mt-5 max-w-2xl text-base leading-8 text-[#64736a]">
-        Perubahan besar dapat dimulai dari cara kita menggunakan teknologi
-        sehari-hari dengan lebih bijak dan bertanggung jawab.
-      </p>
-    </div>
+            <p class="mt-5 max-w-2xl text-base leading-8 text-[#64736a]">
+              Perubahan besar dapat dimulai dari cara kita menggunakan teknologi
+              sehari-hari dengan lebih bijak dan bertanggung jawab.
+            </p>
+          </div>
 
-    <div class="grid gap-5 md:grid-cols-3">
+          <div class="grid gap-5 md:grid-cols-3">
+            <div class="rounded-[24px] border border-[#dfe7df] bg-white p-7">
+              <div class="mb-5 text-3xl">♻️</div>
 
-      <div class="rounded-[24px] border border-[#dfe7df] bg-white p-7">
-        <div class="mb-5 text-3xl">♻️</div>
-        <h3 class="text-xl font-extrabold text-[#123c2a]">
-          Kelola E-Waste
-        </h3>
-        <p class="mt-3 text-sm leading-7 text-[#64736a]">
-          Jangan membuang perangkat elektronik sembarangan. Gunakan kembali
-          atau salurkan ke tempat pengelolaan yang tepat.
-        </p>
-      </div>
+              <h3 class="text-xl font-extrabold text-[#123c2a]">
+                Kelola E-Waste
+              </h3>
 
-      <div class="rounded-[24px] border border-[#dfe7df] bg-white p-7">
-        <div class="mb-5 text-3xl">⚡</div>
-        <h3 class="text-xl font-extrabold text-[#123c2a]">
-          Hemat Energi
-        </h3>
-        <p class="mt-3 text-sm leading-7 text-[#64736a]">
-          Gunakan perangkat digital seperlunya dan matikan perangkat yang
-          sedang tidak digunakan.
-        </p>
-      </div>
+              <p class="mt-3 text-sm leading-7 text-[#64736a]">
+                Jangan membuang perangkat elektronik sembarangan. Gunakan
+                kembali atau salurkan ke tempat pengelolaan yang tepat.
+              </p>
+            </div>
 
-      <div class="rounded-[24px] border border-[#dfe7df] bg-white p-7">
-        <div class="mb-5 text-3xl">🌱</div>
-        <h3 class="text-xl font-extrabold text-[#123c2a]">
-          Gunakan Lebih Lama
-        </h3>
-        <p class="mt-3 text-sm leading-7 text-[#64736a]">
-          Rawat perangkat agar dapat digunakan lebih lama sebelum menggantinya
-          dengan perangkat baru.
-        </p>
-      </div>
+            <div class="rounded-[24px] border border-[#dfe7df] bg-white p-7">
+              <div class="mb-5 text-3xl">⚡</div>
 
-    </div>
-  </div>
-</section>
+              <h3 class="text-xl font-extrabold text-[#123c2a]">
+                Hemat Energi
+              </h3>
+
+              <p class="mt-3 text-sm leading-7 text-[#64736a]">
+                Gunakan perangkat digital seperlunya dan matikan perangkat yang
+                sedang tidak digunakan.
+              </p>
+            </div>
+
+            <div class="rounded-[24px] border border-[#dfe7df] bg-white p-7">
+              <div class="mb-5 text-3xl">🌱</div>
+
+              <h3 class="text-xl font-extrabold text-[#123c2a]">
+                Gunakan Lebih Lama
+              </h3>
+
+              <p class="mt-3 text-sm leading-7 text-[#64736a]">
+                Rawat perangkat agar dapat digunakan lebih lama sebelum
+                menggantinya dengan perangkat baru.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- ================= IMPACT ================= -->
       <section
@@ -393,50 +395,53 @@
             jawab dapat menjadi bagian dari perubahan yang lebih besar.
           </p>
 
-         <!-- Statistics -->
-<div
-  class="mt-14 grid overflow-hidden rounded-[28px] border border-white/15 md:grid-cols-3"
->
-  <div class="bg-white/5 p-8 sm:p-10">
-    <span
-      class="block text-5xl font-extrabold tracking-tight text-[#a8d99c] sm:text-6xl"
-    >
-      3
-    </span>
+          <!-- Statistics -->
+          <div
+            class="mt-14 grid overflow-hidden rounded-[28px] border border-white/15 md:grid-cols-3"
+          >
+            <div class="bg-white/5 p-8 sm:p-10">
+              <span
+                class="block text-5xl font-extrabold tracking-tight text-[#a8d99c] sm:text-6xl"
+              >
+                3
+              </span>
 
-    <p class="mt-3 max-w-xs text-sm leading-6 text-[#c5d5cb]">
-      Fokus Utama EcoTech
-    </p>
-  </div>
+              <p class="mt-3 max-w-xs text-sm leading-6 text-[#c5d5cb]">
+                Fokus Utama EcoTech
+              </p>
+            </div>
 
-  <div
-    class="border-t border-white/15 bg-white/5 p-8 sm:p-10 md:border-l md:border-t-0"
-  >
-    <span
-      class="block text-5xl font-extrabold tracking-tight text-[#a8d99c] sm:text-6xl"
-    >
-      3
-    </span>
+            <div
+              class="border-t border-white/15 bg-white/5 p-8 sm:p-10 md:border-l md:border-t-0"
+            >
+              <span
+                class="block text-5xl font-extrabold tracking-tight text-[#a8d99c] sm:text-6xl"
+              >
+                3
+              </span>
 
-    <p class="mt-3 max-w-xs text-sm leading-6 text-[#c5d5cb]">
-      Program Inisiatif Hijau
-    </p>
-  </div>
+              <p class="mt-3 max-w-xs text-sm leading-6 text-[#c5d5cb]">
+                Program Inisiatif Hijau
+              </p>
+            </div>
 
-  <div
-    class="border-t border-white/15 bg-white/5 p-8 sm:p-10 md:border-l md:border-t-0"
-  >
-    <span
-      class="block text-5xl font-extrabold tracking-tight text-[#a8d99c] sm:text-6xl"
-    >
-      3
-    </span>
+            <div
+              class="border-t border-white/15 bg-white/5 p-8 sm:p-10 md:border-l md:border-t-0"
+            >
+              <span
+                class="block text-5xl font-extrabold tracking-tight text-[#a8d99c] sm:text-6xl"
+              >
+                3
+              </span>
 
-    <p class="mt-3 max-w-xs text-sm leading-6 text-[#c5d5cb]">
-      Langkah Sederhana untuk Memulai
-    </p>
-  </div>
-</div>
+              <p class="mt-3 max-w-xs text-sm leading-6 text-[#c5d5cb]">
+                Langkah Sederhana untuk Memulai
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- ================= FOOTER ================= -->
     <footer
@@ -456,36 +461,42 @@
             </p>
           </div>
 
-        <div class="flex flex-wrap gap-3">
-  <a
-    href="#problem"
-    class="h-10 rounded-full border border-white/15 px-4 py-2 text-xs text-[#d4e0d8] transition hover:bg-white/10 my-auto"
-  >
-    Masalah
-  </a>
+          <div class="flex flex-wrap gap-3">
+            <a
+              href="#problem"
+              class="my-auto h-10 rounded-full border border-white/15 px-4 py-2 text-xs text-[#d4e0d8] transition hover:bg-white/10"
+            >
+              Masalah
+            </a>
 
-  <a
-    href="#program"
-    class="h-10 rounded-full border border-white/15 px-4 py-2 text-xs text-[#d4e0d8] transition hover:bg-white/10 my-auto"
-  >
-    Program
-  </a>
+            <a
+              href="#program"
+              class="my-auto h-10 rounded-full border border-white/15 px-4 py-2 text-xs text-[#d4e0d8] transition hover:bg-white/10"
+            >
+              Program
+            </a>
 
-  <a
-    href="#action"
-    class="h-10 rounded-full border border-white/15 px-4 py-2 text-xs text-[#d4e0d8] transition hover:bg-white/10 my-auto"
-  >
-    Aksi
-  </a>
+            <a
+              href="#action"
+              class="my-auto h-10 rounded-full border border-white/15 px-4 py-2 text-xs text-[#d4e0d8] transition hover:bg-white/10"
+            >
+              Aksi
+            </a>
 
-  <a
-    href="#impact"
-    class="h-10 rounded-full border border-white/15 px-4 py-2 text-xs text-[#d4e0d8] transition hover:bg-white/10 my-auto"
-  >
-    Dampak
-  </a>
-</div>
-</div>
+            <a
+              href="#impact"
+              class="my-auto h-10 rounded-full border border-white/15 px-4 py-2 text-xs text-[#d4e0d8] transition hover:bg-white/10"
+            >
+              Dampak
+            </a>
+          </div>
+        </div>
+        <div
+          class="pt-5 text-xs text-[#7f998b]"
+        >
+          Copyright © 2026 EcoTech Project Dev.
+        </div>
+      </div>
     </footer>
   </body>
 </html>
