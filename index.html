@@ -104,34 +104,33 @@
           </div>
 
           <!-- Hero Visual -->
-          <div class="flex justify-center">
+          <div class="relative">
+            <!-- Image -->
             <div
-              class="relative flex aspect-square w-[min(450px,85vw)] items-center justify-center rounded-full bg-[radial-gradient(circle_at_50%_45%,#f6fff0_0%,#d9edcf_45%,#9fc895_100%)] shadow-[0_35px_80px_rgba(43,105,61,0.18)] ring-[18px] ring-white/40"
+              class="relative overflow-hidden rounded-[32px] border border-white/10 shadow-2xl shadow-black/40"
             >
-              <!-- Sun -->
+              <img
+                src="images/Solar Investment_ So können Sie direkt in Solarenergie investieren.jpeg"
+                alt="Renewable energy technology surrounded by nature"
+                class="h-[500px] w-full object-cover"
+              />
+
+              <!-- Dark Overlay -->
               <div
-                class="absolute right-[15%] top-[13%] h-20 w-20 rounded-full bg-[#f1c85b] shadow-[0_0_60px_rgba(241,200,91,0.5)]"
+                class="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/70 via-transparent to-transparent"
               ></div>
 
-              <!-- Leaf -->
-              <div
-                class="relative h-28 w-48 rotate-[-25deg] rounded-[100%_0_100%_0] bg-[#287a4d] shadow-[20px_20px_0_rgba(40,122,77,0.15)]"
-              >
-                <div
-                  class="absolute left-1/2 top-0 h-full w-1 rotate-45 bg-white/30"
-                ></div>
-              </div>
+              <!-- Caption -->
+              <div class="absolute bottom-0 left-0 right-0 p-8">
+                <p
+                  class="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-400"
+                >
+                  Green Technology
+                </p>
 
-              <!-- Circuit -->
-              <div
-                class="absolute h-44 w-64 rotate-[-20deg] rounded-[50%] border-2 border-dashed border-[#123c2a]/25"
-              ></div>
-
-              <!-- Tag -->
-              <div
-                class="absolute bottom-[10%] left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full border border-white/80 bg-white/85 px-4 py-2 text-xs font-bold text-[#123c2a] shadow-lg backdrop-blur"
-              >
-                Technology × Nature
+                <h3 class="mt-2 text-2xl font-bold text-white">
+                  Powering a Sustainable Future
+                </h3>
               </div>
             </div>
           </div>
@@ -139,7 +138,10 @@
       </section>
 
       <!-- ================= PROBLEM ================= -->
-      <section id="problem" class="bg-white px-6 py-24 lg:px-12 lg:py-32">
+      <section
+        id="problem"
+        class="bg-[url('images/section2.jpeg')] bg-cover bg-center px-6 py-24 lg:px-12 lg:py-32"
+      >
         <div class="mx-auto max-w-7xl">
           <span
             class="mb-5 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-[#287a4d]"
@@ -157,9 +159,11 @@
           </h2>
 
           <div
-            class="mt-12 max-w-5xl rounded-[28px] border border-[#dcebdc] bg-[#edf6eb] p-8 sm:p-10 lg:p-12"
+            class="backdrop-blur mt-12 max-w-5xl rounded-[28px] border border-[#dcebdc] bg-[#edf6eb]/10 p-8 sm:p-10 lg:p-12"
           >
-            <p class="text-base leading-8 text-[#496158] sm:text-lg lg:text-xl">
+            <p
+              class="text-[#f7f6ef] leading-8 text-white sm:text-lg lg:text-xl"
+            >
               Penggunaan teknologi tanpa batas memicu peningkatan limbah
               elektronik dan konsumsi energi pusat data yang sangat tinggi. Jika
               tidak dikelola dengan bijak, emisi karbon dari sektor digital akan
@@ -202,65 +206,89 @@
           <div class="grid gap-6 md:grid-cols-3">
             <!-- Card 1 -->
             <article
-              class="group rounded-[28px] border border-[#dfe7df] bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(20,70,42,0.08)]"
+              class="group overflow-hidden rounded-[28px] border border-[#dfe7df] bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(20,70,42,0.08)]"
             >
-              <div
-                class="mb-7 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#dcefdc] text-2xl transition group-hover:scale-105"
-              >
-                ⚡
+              <!-- Foto -->
+              <div class="h-56 overflow-hidden">
+                <img
+                  src="/images/green-energy.jpeg"
+                  alt="Green Energy"
+                  class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                />
               </div>
 
-              <h3 class="text-2xl font-extrabold tracking-tight text-[#123c2a]">
-                Green Energy
-              </h3>
+              <!-- Content -->
+              <div class="p-8">
+                <h3
+                  class="text-2xl font-extrabold tracking-tight text-[#123c2a]"
+                >
+                  Green Energy
+                </h3>
 
-              <p class="mt-4 text-sm leading-7 text-[#64736a]">
-                Mendorong penggunaan sumber energi terbarukan untuk mendukung
-                infrastruktur dan perangkat digital dengan konsumsi energi yang
-                lebih bertanggung jawab.
-              </p>
+                <p class="mt-4 text-sm leading-7 text-[#64736a]">
+                  Mendorong penggunaan sumber energi terbarukan untuk mendukung
+                  infrastruktur dan perangkat digital dengan konsumsi energi
+                  yang lebih bertanggung jawab.
+                </p>
+              </div>
             </article>
 
             <!-- Card 2 -->
             <article
-              class="group rounded-[28px] border border-[#dfe7df] bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(20,70,42,0.08)]"
+              class="group overflow-hidden rounded-[28px] border border-[#dfe7df] bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(20,70,42,0.08)]"
             >
-              <div
-                class="mb-7 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#dcefdc] text-2xl transition group-hover:scale-105"
-              >
-                ♻
+              <!-- Foto -->
+              <div class="h-56 overflow-hidden">
+                <img
+                  src="images/digital-awareness.jpeg"
+                  alt="Digital Awareness"
+                  class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                />
               </div>
 
-              <h3 class="text-2xl font-extrabold tracking-tight text-[#123c2a]">
-                Digital Awareness
-              </h3>
+              <!-- Content -->
+              <div class="p-8">
+                <h3
+                  class="text-2xl font-extrabold tracking-tight text-[#123c2a]"
+                >
+                  Digital Awareness
+                </h3>
 
-              <p class="mt-4 text-sm leading-7 text-[#64736a]">
-                Mengedukasi masyarakat agar lebih bijak mengelola sampah
-                elektronik, memperpanjang usia perangkat, dan menghemat energi
-                dalam penggunaan teknologi sehari-hari.
-              </p>
+                <p class="mt-4 text-sm leading-7 text-[#64736a]">
+                  Mengedukasi masyarakat agar lebih bijak mengelola sampah
+                  elektronik, memperpanjang usia perangkat, dan menghemat energi
+                  dalam penggunaan teknologi sehari-hari.
+                </p>
+              </div>
             </article>
 
             <!-- Card 3 -->
             <article
-              class="group rounded-[28px] border border-[#dfe7df] bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(20,70,42,0.08)]"
+              class="group overflow-hidden rounded-[28px] border border-[#dfe7df] bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(20,70,42,0.08)]"
             >
-              <div
-                class="mb-7 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#dcefdc] text-2xl transition group-hover:scale-105"
-              >
-                ⌁
+              <!-- Foto -->
+              <div class="h-56 overflow-hidden">
+                <img
+                  src="images/smart-technology.jpeg"
+                  alt="Smart Technology"
+                  class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                />
               </div>
 
-              <h3 class="text-2xl font-extrabold tracking-tight text-[#123c2a]">
-                Smart Technology
-              </h3>
+              <!-- Content -->
+              <div class="p-8">
+                <h3
+                  class="text-2xl font-extrabold tracking-tight text-[#123c2a]"
+                >
+                  Smart Technology
+                </h3>
 
-              <p class="mt-4 text-sm leading-7 text-[#64736a]">
-                Memanfaatkan teknologi pintar seperti sensor otomatis untuk
-                meningkatkan efisiensi penggunaan listrik dan air sekaligus
-                mengurangi pemborosan sumber daya.
-              </p>
+                <p class="mt-4 text-sm leading-7 text-[#64736a]">
+                  Memanfaatkan teknologi pintar seperti sensor otomatis untuk
+                  meningkatkan efisiensi penggunaan listrik dan air sekaligus
+                  mengurangi pemborosan sumber daya.
+                </p>
+              </div>
             </article>
           </div>
         </div>
@@ -347,7 +375,10 @@
     </main>
 
     <!-- ================= FOOTER ================= -->
-    <footer id="footer" class="bg-[#0d2d20] px-6 pb-6 pt-16 text-white lg:px-12">
+    <footer
+      id="footer"
+      class="bg-[#0d2d20] px-6 pb-6 pt-16 text-white lg:px-12"
+    >
       <div class="mx-auto max-w-7xl">
         <div
           class="flex flex-col justify-between gap-10 border-b border-white/10 pb-12 md:flex-row"
