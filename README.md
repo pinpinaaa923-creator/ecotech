@@ -24,6 +24,7 @@ EcoTech dibuat sebagai media edukasi digital untuk meningkatkan kesadaran mengen
 - Tailwind CSS
 - JavaScript
 - Git & GitHub
+- ChatGPT (AI)
 
 ## Struktur Project
 
@@ -33,7 +34,3 @@ ecotech/
 ├── index.html
 ├── README.md
 └── PengerjaanKelompok.md
-
-## Using AI
-
-- ChatGPT
